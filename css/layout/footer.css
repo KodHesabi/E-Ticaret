@@ -1,0 +1,214 @@
+/*! subscribe başlanıç */
+.footer .subscribe-row {
+  background-color: black;
+  color: white;
+  padding: 80px 0px;
+}
+.footer .footer-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 200px;
+}
+
+.footer .subscribe-title,
+.footer .contact-title {
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 500px;
+  line-height: 1.2;
+}  
+
+.footer .subscribe-desc,
+.footer .contact-desc{
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+.footer .footer-subscribe-bottom,
+.footer .footer-contact-bottom {
+  margin-top: 40px;
+}
+
+.footer-subscribe-bottom form {
+ display: flex;
+ position: relative;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+.footer-subscribe-bottom form > input {
+  flex: 1;
+  height: 48px;
+  border: none;
+  
+}
+
+.footer-subscribe-bottom form > button {
+  position: absolute;
+  right: 0;
+    height: 48px !important;
+    border-color: white ;
+    background-color: black;
+    color: white;
+   
+}
+
+.footer .privacy-text{
+    font-size: 10px;
+    color:#75767c;
+    margin-top: 4px;
+    font-weight: 500;
+}
+.footer .privacy-text a{
+    font-size: 10px;
+    color:#75767c;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.footer .footer-contact-bottom .download-app{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/*! subscribe bitiş */
+
+
+/*! widgets başlanıç */
+.widgets-row{
+  padding: 60px 0px;
+  border: 1px solid #dee0ea;
+ 
+}
+
+.widgets-row .footer-widgets{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.widgets-row .footer-widgets >div {
+ flex: 1;
+}
+
+.widgets-row .footer-widgets .brand-info{
+  flex: 3;
+}
+
+.footer-widgets .brand-info .footer-desc{
+  width: 400px;
+  font-size: 14px;
+  margin: 15px 0px;
+}
+
+.footer-widgets .brand-info .footer-contact{
+  
+  font-size: 14px;
+}
+
+.footer-widgets .widget-nav-menu h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-widgets .widget-nav-menu ul{
+  font-size: 13px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+
+/*! widgets bitiş */
+
+/*! copyright başlangıç */
+.copyright-row{
+
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.copyright-row .footer-copyright{
+  display: flex;
+ justify-content: space-between;
+} 
+
+
+.footer-copyright .site-copyright{
+  font-size:12px;
+}
+.footer-menu .footer-menu-list{
+  display: flex;
+  align-items: center;
+  font-size:12px;
+  column-gap: 10px;
+}
+.footer-menu .footer-menu-list .list-item:not(:last-child) 
+{
+  padding-right: 10px;
+  border-right: 1px solid #dee0ea;
+}
+
+
+.footer-menu-list .list-item a{
+  color: black;
+  transition: 0.2s ease all;
+}
+
+.footer-menu-list .list-item a:hover{
+  font-size: 12px;
+  background-color: #1367ef ;
+  color: #fff;
+}
+
+
+
+/*! copyright bitiş */
+
+
+
+
+/*! Responsive */
+@media(max-width:850px){
+    .footer .footer-row-wrapper {
+        flex-direction: column;
+         row-gap: 30px;
+      }
+
+      .footer .brand-info{
+        margin-bottom: 20px;
+      }
+
+      .footer-widgets .brand-info .footer-desc{
+        width: unset;
+      }
+
+      .widgets-row .footer-widgets >div {
+
+        flex: unset !important; 
+       }
+
+        
+    .copyright-row .footer-copyright{
+      justify-content: unset;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      row-gap: 10px;
+     
+    }  
+
+}
+
+@media(max-width:1200px){
+  .copyright-row .footer-copyright {
+    column-gap: 35px;
+  }
+}
+
+/*! Widget Responsive */

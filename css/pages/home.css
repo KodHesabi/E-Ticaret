@@ -1,0 +1,140 @@
+/* base css tarzı tüm section başlıklara aynı formatı verecegiz */
+
+.section-title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.section-title p{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/*! katagoriler başlangıç */
+.categories{
+    margin: 40px 15px;
+}
+
+.categories .category-list{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+/*! katagoriler bitiş */
+
+
+/*! Ürnler Başlangıç */ 
+.products{
+    margin: 40px 15px;
+}
+
+.products .product-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*! Ürnler Bitiş */ 
+
+/*! kampanyalar başlangıç */
+.campaigns{
+    margin: 0px 15px
+}
+.campaigns .campaigns-wrapper{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+
+}
+/*! kampanyalar bitiş */
+
+/*! Blog Başlangıç */
+
+.blog{
+    margin: 30px 15px;
+}
+
+.blog .blog-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+/*! Blog Bitiş */
+
+/*! Markalar Başlangıç */
+.brands {
+  margin: 40px 15px;
+  
+}
+
+.brands .brand-list{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    border: 1px solid #dee0ea;
+}
+
+.brand-list .brand-item{
+    opacity: 0.5;
+    transition: 0.2s ease all;
+}
+
+.brand-list .brand-item:hover{
+    opacity: 1;
+}
+/*! Markalar Bitiş */
+
+
+/*! Politikalar Başlangıç */
+.policy{
+    margin-top: 40px;
+    border: 1px solid #dee0ea;
+   
+
+}
+/*! Politikalar Bitiş*/
+
+/* Kategoriler responsive*/
+@media(max-width:850px)
+{
+    .products .product-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Kategoriler responsive */
+
+/* ürünler responsive */
+@media(max-width:850px)
+{
+    .products .product-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ürünler responsive */
+
+
+/* Blog responsive */
+
+@media(max-width:850px)
+{
+    .blog .blog-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Blog responsive */
+
+
+

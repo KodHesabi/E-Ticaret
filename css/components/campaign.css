@@ -1,0 +1,51 @@
+
+.campaigns .campaigns-item{
+    padding: 70px 35px;
+    background-size: cover;
+    background-position: center;
+    
+    flex: 1;
+    color:azure;
+}
+
+.campaigns .campaigns-item .campaign-title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.campaigns .campaigns-item .campaign-desc{
+    font-size: 18px;
+    margin: 35px 0;
+}
+
+.campaigns-wrapper:nth-child(2) .campaigns-item:nth-child(1){
+    background-image: url(../../resimler/yüksek\ boyut/banner1.png) ;
+    
+    
+}
+
+.campaigns-wrapper:nth-child(2) .campaigns-item:nth-child(2){
+    background-image: url(../../resimler/Figürler/dragonball.jpg) ;
+    
+}
+.campaigns-wrapper:nth-child(3) .campaigns-item:nth-child(1){
+    background-image: url(../../resimler/yüksek\ boyut/banner2.jpg) ;
+    flex: 5;
+    
+}
+.campaigns-wrapper:nth-child(3) .campaigns-item:nth-child(2){
+    background-image: url(../../resimler/Figürler/figür1.jpg) ;
+    flex: 3;
+    
+}
+
+/* kampanyalar responsive */
+
+@media(max-width:850px)
+{
+    .campaigns .campaigns-item{
+        width: 100%;
+        flex: unset !important;
+    }
+}

@@ -1,0 +1,140 @@
+.products .product-list{
+    gap: 30px;
+
+}
+
+.products .product-item{
+    text-align: center;
+    background-color: #efefef;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.products .product-item img{
+    width: 100%;
+    transition: .3s ease all;
+}
+
+.products .product-item .img2{
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.products .product-image:hover .img2{
+    opacity: 1;
+    visibility: visible;
+}
+
+.products .product-item .product-title{
+    font-size: 14px;
+    font-weight: 400; 
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.products .product-item .product-title:hover{
+    font-weight: 500;
+    color: #ff3c20;
+    
+   
+}
+
+
+.products .product-item .product-star{
+    display: flex;
+    justify-content: center ;
+    margin: 8px 0;
+    column-gap: 4px;
+}
+
+.products .product-item .product-star i{
+    font-size: 13px;
+    color: gold;
+}
+
+.product-item .product-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 15px;
+}
+
+.product-item .product-price strong{
+    color: #ff3c20;
+    font-weight: 500;
+}
+
+.product-item .product-price .eski-fiyat{
+    color: #7d7d7d;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.product-item .product-discount{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3c20;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+
+.product-item .product-links{
+    display:inline-flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+
+    visibility: hidden;  
+    transition: 0.3s ease-out all;
+}
+.products .product-item:hover .product-links {
+    transform: translate(15px);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.product-item .product-links button,
+.product-item .product-links a{
+    background-color: #000;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all ease 0.3s;
+      
+}
+
+.product-item .product-links button:hover,
+.product-item .product-links a:hover{
+    opacity: 0.7;
+      
+}
+
+.product-item .product-links i{
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
