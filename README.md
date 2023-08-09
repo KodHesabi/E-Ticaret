@@ -1,2 +1,2 @@
 # E-Ticaret
-animerender.netlify.app/
+https://animerender.netlify.app/
